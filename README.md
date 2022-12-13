@@ -4,7 +4,9 @@ Objective - The project is used to identify inefficient hosts
 
 tech stack used - Golang, Buffalo, mysql
 
-API - GET - http://127.0.0.1:3000/hosts/inefficient
+API - A HTTP/REST endpoint to retrieve hostnames having less or equals X active IP addresses. X(threshold is set from variable IP_CONFIG_THRESHOLD in .env )
+ 
+GET - http://127.0.0.1:3000/hosts/inefficient
 Return Json arrays of host names
 
 output - 
