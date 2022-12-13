@@ -1,0 +1,49 @@
+---
+development:
+  dialect: "mysql"
+  database: "wms"
+  host: "127.0.0.1"
+  port: "3309"
+  user: "shiprocket_api"
+  password: "DDwgLAA3WH2a2k1h"
+
+test:
+  dialect: "mysql"
+  #
+  # You can use a single URL string for the same configuration:
+  #
+  #url: "mysql://root:root@(127.0.0.1:3309)/mta_hosting_optimiser_test?parseTime=true&multiStatements=true&readTimeout=3s"
+  #
+  # Note that if you use `url`, other configurations are silently ignored.
+  # In this case, the URL must contain all required connection parameters.
+  #
+  database: "wms"
+  host: "127.0.0.1"
+  port: "3309"
+  user: "shiprocket_api"
+  password: "DDwgLAA3WH2a2k1h"
+
+production:
+  #
+  # You can also use environmental variables to override values in this config.
+  #
+  #url: {{envOr "DATABASE_URL" "mysql://root:root@(127.0.0.1:3309)/mta_hosting_optimiser_production?parseTime=true&multiStatements=true&readTimeout=3s"}}
+  #
+  dialect: "mysql"
+  database: "wms"
+  host: {{envOr "DATABASE_HOST" "127.0.0.1"}}
+  port: {{envOr "DATABASE_PORT" "3309"}}
+  user: {{envOr "DATABASE_USER" "shiprocket_api"}}
+  password: {{envOr "DATABASE_PASSWORD" "DDwgLAA3WH2a2k1h"}}
+  #
+  # And you can also override connection parameters by setting it under options.
+  #
+  #options:
+  #  parseTime: true
+  #  multiStatements: true
+  #  readTimeout: 3s
+  #  collation: "utf8mb4_general_ci"
+  #
+  # CAUTION!
+  #   `parseTime` and` multiStatements` must be set to `true` to work properly.
+  #   If you are not sure, do not change (or set) these values.

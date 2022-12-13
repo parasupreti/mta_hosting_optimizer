@@ -1,0 +1,4 @@
+development:
+    dialect: mysql
+    datasource: shiprocket_api:DDwgLAA3WH2a2k1h@tcp(127.0.0.1:3309)/wms?parseTime=true
+    dir: migrations/
