@@ -1,5 +1,9 @@
 # mta_hosting_optimiser
 
+Description
+
+Currently, about 35 physical servers host 482 mail transfer agents (MTAs) each having a dedicated public IP address. To be economical while hosting MTAs as a software engineer, we want to create a service that uncovers the inefficient servers hosting only few active MTAs.
+
 Objective - The project is used to identify inefficient hosts
 
 tech stack used - Golang, Buffalo, mysql
