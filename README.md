@@ -1,4 +1,4 @@
-# mta_hosting_optimiser
+# mta-hosting-optimiser
 
 Description
 
